@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "5f2bdd29-64e9-41d7-822a-8883160e116e",
+		"name": "Micro-serviço",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{url}}/user/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Nathan\",\r\n    \"cpf\": \"01889148628\",\r\n    \"telefone\": \"32998398912\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/user/add",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/user/token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"secret\": \"d9cb1e16-4018-43ec-a399-ac6e86657fde\",\r\n    \"pass\": \"8ebe603fab6f018a5a0a95afd39abd868307f1f35a2618f737eeb56ed0adb033\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/user/token",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/update/user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Nathan de jesus silva 1\",\r\n    \"telefone\":\"32 99839-8917\",\r\n    \"cpf\":\"018.891.486.28\",\r\n    \"secret\": \"d9cb1e16-4018-43ec-a399-ac6e86657fde\",\r\n    \"pass\": \"8ebe603fab6f018a5a0a95afd39abd868307f1f35a2618f737eeb56ed0adb033\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/update/user",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"update",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/delete/user/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"3\",\r\n    \"secret\": \"1eed0ff4-1c9b-43d5-8064-60c5416c7231\",\r\n    \"pass\": \"56c145b63ae941fa1364bda1d47005e501ecd510120cd3be6873f5f4cc477d8f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/delete/user",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"delete",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
